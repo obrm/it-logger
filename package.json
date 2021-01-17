@@ -52,5 +52,5 @@
     "concurrently": "^5.3.0",
     "json-server": "^0.16.3"
   },
-  "proxy": "https://my-json-server.typicode.com/obrm/it-logger-db"
+  "proxy": "http://localhost:5000"
 }
