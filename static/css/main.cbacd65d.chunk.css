@@ -1,0 +1,2 @@
+@import url(https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap);[type=checkbox]:checked+span:not(.lever):before{border-right:2px solid #1b5e20;border-bottom:2px solid #1b5e20}[type=checkbox]+span:not(.lever):before,[type=checkbox]:not(.filled-in)+span:not(.lever):after{border:2px solid #1b5e20}
+/*# sourceMappingURL=main.cbacd65d.chunk.css.map */
