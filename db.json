@@ -20,6 +20,13 @@
       "attention": true,
       "tech": "Sam Smith",
       "date": "2021-01-17T15:01:14.641Z"
+    },
+    {
+      "message": "test",
+      "attention": true,
+      "tech": "אורי Baram",
+      "date": "2021-01-17T17:17:19.912Z",
+      "id": 4
     }
   ],
   "techs": [
@@ -29,19 +36,9 @@
       "lastName": "Doe"
     },
     {
-      "id": 2,
-      "firstName": "Sam",
-      "lastName": "Smith"
-    },
-    {
-      "id": 3,
-      "firstName": "Sara",
-      "lastName": "Wilson"
-    },
-    {
-      "firstName": "Jen",
-      "lastName": "Doe",
-      "id": 4
+      "firstName": "אורי",
+      "lastName": "Baram",
+      "id": 2
     }
   ]
 }
