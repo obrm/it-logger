@@ -1,5 +1,6 @@
 {
   "name": "it-logger",
+  "homepage": "http://obrm.github.io/it-logger",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,7 +25,9 @@
     "dev": "concurrently \"npm start\" \"npm run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
