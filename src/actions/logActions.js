@@ -9,13 +9,14 @@ import {
   UPDATE_LOG,
   SEARCH_LOGS,
 } from './types';
+import { DATA_BASE_URL } from '../config';
 
 // Get logs from server
 export const getLogs = () => async dispatch => {
   try {
     setLoading();
 
-    const res = await fetch('/logs');
+    const res = await fetch(`${DATA_BASE_URL}/logs`);
     const data = await res.json();
 
     dispatch({
@@ -35,7 +36,7 @@ export const addLog = log => async dispatch => {
   try {
     setLoading();
 
-    const res = await fetch('/logs', {
+    const res = await fetch(`${DATA_BASE_URL}/logs`, {
       method: 'POST',
       body: JSON.stringify(log),
       headers: { 'Content-Type': 'application/json' },
@@ -58,7 +59,7 @@ export const addLog = log => async dispatch => {
 export const updateLog = log => async dispatch => {
   try {
     setLoading();
-    const res = await fetch(`/logs/${log.id}`, {
+    const res = await fetch(`${DATA_BASE_URL}/logs/${log.id}`, {
       method: 'PUT',
       body: JSON.stringify(log),
       headers: { 'Content-Type': 'application/json' },
@@ -82,7 +83,7 @@ export const updateLog = log => async dispatch => {
 export const deleteLog = id => async dispatch => {
   try {
     setLoading();
-    await fetch(`/logs/${id}`, {
+    await fetch(`${DATA_BASE_URL}/logs/${id}`, {
       method: 'DELETE',
     });
 
@@ -103,7 +104,7 @@ export const searchLogs = text => async dispatch => {
   try {
     setLoading();
 
-    const res = await fetch(`/logs?q=${text}`);
+    const res = await fetch(`${DATA_BASE_URL}/logs?q=${text}`);
     const data = await res.json();
 
     dispatch({

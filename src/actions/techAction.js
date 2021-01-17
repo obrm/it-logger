@@ -5,13 +5,14 @@ import {
   TECHS_ERROR,
   SET_LOADING,
 } from '../actions/types';
+import { DATA_BASE_URL } from '../config';
 
 // Get technicians from server
 export const getTechs = () => async dispatch => {
   try {
     setLoading();
 
-    const res = await fetch('/techs');
+    const res = await fetch(`${DATA_BASE_URL}/techs`);
     const data = await res.json();
 
     dispatch({
@@ -31,7 +32,7 @@ export const addTech = tech => async dispatch => {
   try {
     setLoading();
 
-    const res = await fetch('/techs', {
+    const res = await fetch(`${DATA_BASE_URL}/techs`, {
       method: 'POST',
       body: JSON.stringify(tech),
       headers: { 'Content-Type': 'application/json' },
@@ -54,7 +55,7 @@ export const addTech = tech => async dispatch => {
 export const deleteTech = id => async dispatch => {
   try {
     setLoading();
-    await fetch(`/techs/${id}`, {
+    await fetch(`${DATA_BASE_URL}/techs/${id}`, {
       method: 'DELETE',
     });
 
