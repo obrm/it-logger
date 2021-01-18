@@ -16,17 +16,10 @@
     },
     {
       "id": 3,
-      "message": "Foo loo",
-      "attention": true,
+      "message": "Foo ",
+      "attention": false,
       "tech": "Sam Smith",
-      "date": "2021-01-17T15:01:14.641Z"
-    },
-    {
-      "message": "test",
-      "attention": true,
-      "tech": "אורי Baram",
-      "date": "2021-01-17T17:17:19.912Z",
-      "id": 4
+      "date": "2021-01-17T20:43:01.827Z"
     }
   ],
   "techs": [
@@ -36,7 +29,7 @@
       "lastName": "Doe"
     },
     {
-      "firstName": "אורי",
+      "firstName": "Ori",
       "lastName": "Baram",
       "id": 2
     }
